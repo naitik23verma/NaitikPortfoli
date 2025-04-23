@@ -1,0 +1,22 @@
+.circular-text {
+    position: relative;
+    width: 2 * 120px;
+    height: 2 * 120px;
+    animation: spin 10s linear infinite;
+  }
+  
+  .circular-text span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: white;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

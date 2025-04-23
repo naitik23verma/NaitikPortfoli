@@ -1,0 +1,150 @@
+/* Panel Background Styling */
+.hire-me-panel {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Very Dark Background */
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 65%; /* Reduced width of the form */
+    max-width: 800px; /* Max width limit */
+    z-index: 10000000;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap between elements */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Glowing effect */
+    margin-top: 2rem; /* Added margin from the top */
+  }
+  
+  /* Open Class: Slide In Panel */
+  .hire-me-panel.open {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  /* Form Styling */
+  .hire-me-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap between inputs */
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  /* Input and Textarea Styling */
+  input,
+  textarea {
+    padding: 0.6rem 1rem; /* Smaller padding */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.1); /* Increased brightness */
+    color: #f0f0f0;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+  }
+  
+  /* Focus on Input and Textarea */
+  input:focus,
+  textarea:focus {
+    border-color: rgba(0, 255, 255, 0.4);
+  }
+  
+  /* Button Styling (Uniform for All Buttons) */
+  .hireme-button,
+  .resume-button,
+  .whatsapp-button,
+  .submit-button {
+    padding: 0.6rem 1.2rem; /* Smaller padding */
+    font-size: 0.95rem; /* Slightly smaller font size */
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(0, 4, 255, 0.3), rgba(158, 253, 190, 0.2));
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Button Hover Effect */
+  .hireme-button:hover,
+  .resume-button:hover,
+  .whatsapp-button:hover,
+  .submit-button:hover {
+    background: linear-gradient(135deg, rgba(0, 4, 255, 0.5), rgba(158, 253, 190, 0.4));
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+  }
+  
+  /* Section Title */
+  #hireMeModal h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0, 4, 255, 0.6), rgba(158, 253, 190, 0.6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Group buttons neatly */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Reduced gap between buttons */
+    margin-top: 1rem;
+  }
+  
+  /* Adjust for mobile or wider screens */
+  @media (max-width: 768px) {
+    .hire-me-form {
+      flex-direction: column;
+      align-items: center;
+    }
+    .right-form {
+      max-width: 100%;
+    }
+  }
+  
+  /* Adjusted Button for Submit and Download Resume */
+  .submit-button,
+  .resume-button {
+    margin-top: 0.5rem;  /* Reduced spacing between submit and resume button */
+  }
+  
+  .resume-button {
+    background: linear-gradient(135deg, rgba(0, 4, 255, 0.3), rgba(158, 253, 190, 0.2)); /* Consistent color */
+  }
+  
+  /* Prevent Button Overlap */
+  .right-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 100%; /* Prevent overflow */
+  }
+  
+  /* Prevent form overflow */
+  .hire-me-form input,
+  .hire-me-form textarea {
+    max-width: 100%; /* Ensure inputs do not overflow */
+  }
+  

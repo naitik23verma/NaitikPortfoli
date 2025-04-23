@@ -1,0 +1,335 @@
+.chatbot-container {
+    position: absolute;
+    width: 300px;
+    background: linear-gradient(135deg, rgba(0, 4, 255, 0.526), rgba(158, 253, 190, 0.658));
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: move;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .chat-header .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chatbot-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .chat-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .close-btn,
+  .project-btn {
+    background-color: rgba(0, 4, 255, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover,
+  .project-btn:hover {
+    background-color: rgba(0, 4, 255, 1);
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .message.bot {
+    background-color: rgba(0, 4, 255, 0.8);
+    color: white;
+  }
+  
+  .message.user {
+    background-color: rgba(158, 253, 190, 0.9);
+    color: black;
+    text-align: right;
+  }
+  
+  .user-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-input input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .user-input input:focus {
+    border-color: rgba(0, 4, 255, 0.8);
+  }
+  
+  .user-input button {
+    background-color: rgba(0, 4, 255, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-input button:hover {
+    background-color: rgba(0, 4, 255, 1);
+  }
+  
+  .user-input button:focus {
+    outline: none;
+  }
+  .chatbot-container {
+    position: absolute;
+    width: 300px;
+    background: linear-gradient(135deg, rgba(0, 4, 255, 0.526), rgba(158, 253, 190, 0.658));
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: move;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .chat-header .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chatbot-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .chat-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .close-btn,
+  .project-btn {
+    background-color: rgba(0, 4, 255, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover,
+  .project-btn:hover {
+    background-color: rgba(0, 4, 255, 1);
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .message.bot {
+    background-color: rgba(0, 4, 255, 0.8);
+    color: white;
+  }
+  
+  .message.user {
+    background-color: rgba(158, 253, 190, 0.9);
+    color: black;
+    text-align: right;
+  }
+  
+  .user-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-input input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    caret-color: transparent;
+  }
+  
+  .user-input input:focus {
+    border-color: rgba(0, 4, 255, 0.8);
+  }
+  
+  .user-input button {
+    background-color: rgba(0, 4, 255, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .chatbot-wrapper {
+    position: fixed;
+    width: 320px;
+    height: 420px;
+    background: linear-gradient(160deg, rgba(0, 4, 255, 0.526), rgba(158, 253, 190, 0.658));
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    cursor: move;
+  }
+  
+  .chatbot-header {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatbot-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .chatbot-body {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .msg {
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 80%;
+    font-size: 14px;
+  }
+  
+  .msg.bot {
+    background: white;
+    align-self: flex-start;
+  }
+  
+  .msg.user {
+    background: black;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .chatbot-input {
+    padding: 10px;
+    display: flex;
+    gap: 6px;
+  }
+  
+  .chatbot-input input {
+    flex: 1;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+  }
+  
+  .chatbot-input button {
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .user-input input {
+    caret-color: transparent;
+  }
+  
+
+  /* Hide the blinking dash when not focused */
+.user-input input {
+  caret-color: transparent; /* hides blinking dash */
+}
+
+/* Show the blinking dash only when actually focused */
+
+
+
+
+/* Remove caret globally */
+input, textarea {
+  caret-color: transparent !important; /* Ensures the caret is removed everywhere */
+}
+
+/* If you want to specifically target the chatbot input, keep the original code */
+.chatbot-input input {
+  flex: 1;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  caret-color: transparent; /* Remove blinking caret inside the chatbot */
+}
+
+.chatbot-input input:focus {
+  caret-color: transparent; /* Ensures caret is invisible when focused */
+  outline: none;
+}
+/* Remove the caret and prevent text selection */
+* {
+  caret-color: transparent !important;  /* Remove the caret everywhere */
+  user-select: none !important;  /* Prevent text selection */
+}
+
+/* Ensure user-select doesn't affect inputs and textareas for typing purposes */
+input, textarea, .chatbot-input input {
+  user-select: text !important;  /* Allow selection inside input fields */
+  caret-color: transparent !important;  /* Remove caret */
+}

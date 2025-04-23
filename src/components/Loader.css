@@ -1,0 +1,72 @@
+/* Wrapper takes full screen */
+.loader-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* LetterGlitch full-screen background */
+  .glitch-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Ensure glitch child fills the screen */
+  .glitch-bg > div {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  /* Foreground loader content */
+  .loader-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title */
+  .loader-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  /* Circular Text */
+  .circular-text {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    animation: spin 10s linear infinite;
+    z-index: 2;
+  }
+  
+  .circular-text span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  
+  /* Spin Animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

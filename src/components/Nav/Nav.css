@@ -1,0 +1,86 @@
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999999999;
+    background-color: black;
+}
+.active{
+   color: aqua;
+   
+}
+li::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    transition: all 0.5s ease;
+}
+
+li:hover::after{
+    width: 100%;
+    background-color: aqua;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color:white;
+    list-style: none;
+    font-size: 20px;
+}
+nav h1{
+    font-size: 30px;
+    background:linear-gradient(to right,rgb(0, 204, 255),rgb(158, 253, 190));
+    background-clip: text;
+    color: transparent;
+}
+nav ul a{
+    cursor: pointer;
+}
+.hamburger{
+    color: aqua;
+    display: none;
+}
+.mobilemenu{
+    position: absolute;
+    top: 63px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(7, 14, 20);
+    right: 0;
+    backdrop-filter: blur(7px);
+    opacity: 0.8;
+    transform: translate(100%);
+    flex-direction: column;
+    transition: all 0.3s ease;
+    gap:60px;
+}
+
+.activemobile{
+    transform: translate(0);
+}
+
+
+@media(max-width:750px) {
+    .desktopmenu{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        cursor: pointer;
+    }
+}.user-input input {
+    caret-color: transparent;
+  }
+  
+  .user-input input:focus {
+    caret-color: auto; /* back to normal when actually clicked */
+  }
+  

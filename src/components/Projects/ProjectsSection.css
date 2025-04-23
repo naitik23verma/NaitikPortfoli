@@ -1,0 +1,213 @@
+.projects-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #0a0f15, #0e111a);
+    color: white;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 4rem;
+    background: linear-gradient(90deg, #22c55e, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .project-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 300px;
+    height: 37vh;
+    backdrop-filter: blur(20px);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.08);
+  }
+  
+  .project-content {
+    padding: 1.2rem;
+  }
+  
+  .project-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #4ade80, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .project-desc {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    min-height: 50px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.75rem;
+    background: #1f2937;
+    padding: 0.3rem 0.6rem;
+    border-radius: 9999px;
+    color: #e2e8f0;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .live-btn,
+  .github-btn {
+    flex: 1;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .live-btn {
+    background: linear-gradient(to right, #2563eb, #06b6d4);
+    color: white;
+  }
+  
+  .github-btn {
+    background: #1f2937;
+    color: white;
+  }
+  
+  .live-btn:hover {
+    background: linear-gradient(to right, #1d4ed8, #0891b2);
+  }
+  
+  .github-btn:hover {
+    background: #374151;
+  }
+  
+  .project-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .code-wrapper {
+    margin-top: 1rem;
+    border: 1px solid rgba(0, 4, 255, 0.3);
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0 0 8px rgba(0, 4, 255, 0.2);
+  }
+  .code-block {
+    font-size: 14px;
+    padding: 1rem;
+    background: #2d2d2d;
+    border-radius: 8px;
+  }
+  .code-wrapper {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: auto;
+    background: rgba(0, 4, 255, 0.1);
+    border: 1px solid rgba(0, 4, 255, 0.4);
+    box-shadow: 0 0 12px rgba(158, 253, 190, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .code-block {
+    font-size: 14px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #2d2d2d !important;
+    color: #f8f8f2;
+    line-height: 1.5;
+  }
+  .loader-container {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle at center, #0f0f0f 0%, #070707 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .loader-title {
+    font-size: 3.5rem;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-weight: 700;
+    color: rgba(158, 253, 190, 0.9);
+    text-shadow: 
+      0 0 10px rgba(0, 255, 255, 0.3),
+      0 0 20px rgba(0, 255, 255, 0.2),
+      0 0 30px rgba(0, 4, 255, 0.3);
+    animation: float 2.5s ease-in-out infinite, fadeIn 1.2s ease-in-out;
+    letter-spacing: 3px;
+  }
+  
+  /* Smooth fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  /* Floating animation for text */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  

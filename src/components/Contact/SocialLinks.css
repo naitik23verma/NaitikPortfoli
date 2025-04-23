@@ -1,0 +1,13 @@
+.social-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* margin-top: 100vh;
+    position: absolute;
+    margin-right: 45vw;
+    margin-bottom: 20vh; */
+    margin-top: -20vh;
+
+  }
+  

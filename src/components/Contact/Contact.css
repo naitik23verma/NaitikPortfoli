@@ -1,0 +1,131 @@
+#contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.leftContact{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.rightContact{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.avatar{
+    height: 100%;
+    width: 100%;
+
+}
+.social{
+  margin-top: 0;
+}
+
+/* .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: rgb(7, 14, 20);
+    gap: 2rem;
+  }
+  
+  .leftContact {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .avatar-animation {
+    animation: float 3s ease-in-out infinite;
+    width: 300px;
+    height: auto;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .rightContact {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    max-width: 450px;
+    width: 100%;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    font-size: 1rem;
+    color: #111;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 5px 20px rgba(0, 198, 255, 0.3);
+  }
+  
+  .status-text {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+   */

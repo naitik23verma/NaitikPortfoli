@@ -3,11 +3,14 @@ import RollingGallery from './RollingGallery';
 import VisitorGraph from "./VisitorGraph";
 import trackVisitor from "../../VisitorTracker.js"; // Import trackVisitor function
 import "./About.css"
+import ProjectChatBot from "./ProjectChatBot"
 function About() {
   const [showChat, setShowChat] = useState(false);
 
   // Toggle chat visibility
-  const handleChatToggle = () => setShowChat(prev => !prev);
+  const handleChatToggle = () => {
+    setShowChat(prev => !prev);
+  };
 
   // Track visitors when component mounts
   useEffect(() => {
@@ -84,16 +87,17 @@ function About() {
         {/* Show Project ChatBot only when 'showChat' is true */}
         {showChat && (
           <ProjectChatBot
-            name="Naitik"
-            techStack={["React", "Node.js", "Express", "MongoDB"]}
-            github="https://github.com/your-repo"
-            live="https://your-live-site.com"
-            projectLink="https://your-live-site.com"
-            description="I'm a Netflix clone project using MERN stack!"
-            avatar="https://avatars.githubusercontent.com/u/9919?s=280&v=4"
-            onClose={() => setShowChat(false)}
-          />
-        )}
+          name="Naitik"
+          techStack={["React", "Node.js", "Express", "MongoDB"]}
+          github="https://github.com/your-repo"
+          live="https://your-live-site.com"
+          projectLink="https://your-live-site.com"
+          description="I'm a Netflix clone project using MERN stack!"
+          avatar="https://avatars.githubusercontent.com/u/9919?s=280&v=4"
+          onClose={handleChatToggle}  // You can simply re-use the same toggle handler
+        />
+      )}
+        
       </div>
     </div>
   );

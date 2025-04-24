@@ -109,4 +109,13 @@ div.gallery-content{
         justify-content: center;
         
     }
+    .rightabout{
+        height: 70vh;
+        width: 100vw;
+    }
+    .leftabout{
+        margin-top: 20vh;
+        height: 40vh;
+        width: 95vw;
+    }
 }

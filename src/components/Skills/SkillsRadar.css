@@ -1,0 +1,136 @@
+.Skills{
+    display: flex;
+}
+.skills-radar-container {
+    background: linear-gradient(135deg, rgba(0, 4, 255, 0.526), rgba(158, 253, 190, 0.658));
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: all 0.3s ease;
+    max-height: 50vh;
+  }
+  
+  .skills-radar-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .skills-radar-container {
+      padding: 20px;
+      margin: 30px 15px;
+    }
+  
+    .skills-radar-heading {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skills-radar-heading {
+      font-size: 1.3rem;
+    }
+  }
+  .leftSkill{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.rightSkill{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.map-container{
+    margin-left: 12vw;
+}
+
+@media (max-width: 1184px){
+    .Skills{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .skills-radar {
+        
+       
+        max-width: 50vw;
+        margin: auto;
+        
+        max-height: 50vh;
+      }
+      
+}
+/* Make radar chart container adapt and be square on mobile */
+.SkillsRadar {
+    width: 100%;
+    max-width: 580px;
+    margin: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .SkillsRadar {
+      padding: 10px;
+    }
+  
+    .SkillsRadar .recharts-responsive-container {
+      width: 100% !important;
+      max-width: 320px;
+      max-height: 320px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .SkillsRadar .recharts-responsive-container {
+      max-width: 280px;
+      max-height: 280px;
+    }
+  
+    .SkillsRadar h2 {
+      font-size: 1.3rem;
+    }
+    .leftSkill{
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: block;
+  }
+  .rightSkill{
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  .map-container{
+    margin-right: auto;
+   
+}
+  }
+  

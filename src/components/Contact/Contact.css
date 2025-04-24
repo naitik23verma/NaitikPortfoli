@@ -1,11 +1,11 @@
 #contact{
     width: 100%;
-    height: 100%;
+    height: 130vh;
     display: flex;
 }
 .leftContact{
     width: 50%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,12 +13,13 @@
     display: block;
 }
 .rightContact{
-    width: 50%;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .avatar{
     height: 100%;
@@ -129,3 +130,25 @@
     color: white;
   }
    */
+   @media (max-width: 480px) {
+    #contact{
+      width: 100%;
+      height: 200vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .leftContact{
+    width: 50%;
+    height: 150vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+  }
+  

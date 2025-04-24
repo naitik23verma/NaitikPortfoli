@@ -238,4 +238,8 @@
     font-weight: bold;
     color: white;
   }
-  
+  .contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.456);
+  opacity: 1; /* ensures it's not transparent */
+}

@@ -32,7 +32,7 @@ const VisitorGraph = () => {
         padding: "2rem",
         borderRadius: "16px",
         boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
-        maxWidth: "800px",
+        maxWidth: "1200px",
         margin: "auto",
       }}
     >

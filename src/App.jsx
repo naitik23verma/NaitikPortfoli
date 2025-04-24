@@ -136,6 +136,7 @@
 
 // export default App;
 // src/App.jsx
+import SkillsRadar from "./components/Skills/SkillsRadar";
 import React, { useEffect, useState } from "react";
 import Nav from "./components/Nav/Nav";
 import About from "./components/About/About";
@@ -159,7 +160,9 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <SkillsRadar />
       <Footer />
+
     </>
   );
 }

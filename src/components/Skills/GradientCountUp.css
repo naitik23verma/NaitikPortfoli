@@ -1,0 +1,55 @@
+.countup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50vh;
+  }
+  
+  .gradient-text {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 4, 255, 0.526),
+      rgba(158, 253, 190, 0.658),
+      rgba(0, 4, 255, 0.526)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .description-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ccc;
+  }
+  .countup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    
+  }
+  
+  .gradient-text {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 4, 255, 0.526),
+      rgba(158, 253, 190, 0.658)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .description-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #888;
+  }
+  

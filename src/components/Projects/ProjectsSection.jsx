@@ -293,12 +293,7 @@ const ProjectCard = ({ project }) => {
             GitHub <FaGithub size={14} />
           </a>
         </div>
-        <button
-          className="toggle-code-btn"
-          onClick={() => setShowCode(!showCode)}
-        >
-          {showCode ? "Hide Code" : "Show Code Snippet"}
-        </button>
+        
         {showCode && (
           <div className="code-wrapper">
             <SyntaxHighlighter language="javascript" style={darcula} className="code-block">

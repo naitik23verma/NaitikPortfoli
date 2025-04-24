@@ -68,6 +68,7 @@ const ContactForm = () => {
       </form>
       {statusMessage && <p className="status-text">{statusMessage}</p>}
     </div>
+    
   );
 };
 

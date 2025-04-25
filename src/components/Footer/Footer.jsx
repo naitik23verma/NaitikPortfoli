@@ -10,13 +10,13 @@ const Footer = () => {
         <p className="footer-subtitle">Computer Science @ NIT Bhopal | Full Stack Developer</p>
 
         <div className="footer-links">
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+          <a href="https://github.com/naitik23verma/Ecell-Task.git" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/naitik-verma869157318" target="_blank" rel="noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/naitikverma9111?igsh=MWppZWVxNGtpenJoNg==" target="_blank" rel="noreferrer">
             <FaInstagram />
           </a>
         </div>

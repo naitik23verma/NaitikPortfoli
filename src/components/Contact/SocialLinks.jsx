@@ -7,19 +7,19 @@ const socialLinks = [
   {
     icon: <FaLinkedin size={40} color="#0077b5" />,
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/your-profile/",
+    url: "https://www.linkedin.com/in/naitik-verma869157318",
     bg: "linear-gradient(to right, #0077b5, #00c6ff)",
   },
   {
     icon: <FaGithub size={40} color="#333" />,
     title: "GitHub",
-    url: "https://github.com/your-username",
+    url: "https://github.com/naitik23verma/Ecell-Task.git",
     bg: "linear-gradient(to right, #333333, #6e6e6e)",
   },
   {
     icon: <FaInstagram size={40} color="#e1306c" />,
     title: "Instagram",
-    url: "https://instagram.com/your-username",
+    url: "https://www.instagram.com/naitikverma9111?igsh=MWppZWVxNGtpenJoNg==",
     bg: "linear-gradient(to right, #e1306c, #f77737)",
   },
 ];

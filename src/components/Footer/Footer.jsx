@@ -10,7 +10,7 @@ const Footer = () => {
         <p className="footer-subtitle">Computer Science @ NIT Bhopal | Full Stack Developer</p>
 
         <div className="footer-links">
-          <a href="https://github.com/naitik23verma/Ecell-Task.git" target="_blank" rel="noreferrer">
+          <a href="https://github.com/naitik23verma" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
           <a href="https://www.linkedin.com/in/naitik-verma869157318" target="_blank" rel="noreferrer">

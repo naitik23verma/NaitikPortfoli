@@ -13,7 +13,7 @@ const socialLinks = [
   {
     icon: <FaGithub size={40} color="#333" />,
     title: "GitHub",
-    url: "https://github.com/naitik23verma/Ecell-Task.git",
+    url: "https://github.com/naitik23verma",
     bg: "linear-gradient(to right, #333333, #6e6e6e)",
   },
   {

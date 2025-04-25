@@ -151,3 +151,55 @@ div.blur{
      
     }
   }
+  @media (max-width: 900px){
+    .typing{
+      margin-top: 2rem;
+      font-size: 4vh;
+     
+    }
+    #home{
+      width: 100%;
+      height: 140vh;
+      min-height: 100vh;
+      display: flex;
+      overflow: hidden;
+     
+  }
+  .lefthome{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+}
+.righthome{
+    width: 50vw;
+    height: 100vh;
+}
+  } 
+  @media (max-width: 440px) {
+    .orb{
+      display: none;
+    }
+    .typing{
+      margin-top: 10rem;
+      font-size: 4vh;
+     
+    }
+    #home{
+      width: 100%;
+      height: 100vh;
+      min-height: 100vh;
+      display: flex;
+      overflow: hidden;
+  }
+  .lefthome{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+}
+.righthome{
+    width: 50vw;
+    height: 100vh;
+}
+  }

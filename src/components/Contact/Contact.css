@@ -150,5 +150,59 @@
     display: block;
 }
 
+
+
   }
-  
+  @media (max-width: 900px){
+    #contact{
+      width: 100%;
+      height: 220vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .rightContact{
+    width: 50%;
+    height: 150vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+  }
+  @media (max-width: 480px) {
+    #contact{
+      width: 100%;
+      height: 200vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .leftContact{
+    width: 100%;
+    height: 150vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.rightContact{
+  width: 100%;
+  height: 150vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+
+  }
